@@ -1,0 +1,3 @@
+{
+    "connString": "DRIVER={SQL Server Native Client 11.0};SERVER=localhost;DATABASE=test;UID=test;PWD=test"
+}
