@@ -3,6 +3,8 @@ import json
 import pyodbc
 import pandas as pd
 
+pyodbc.pooling = False
+
 with open('./config.json', 'r') as f:
     config = json.load(f)
 
