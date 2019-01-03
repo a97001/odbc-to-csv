@@ -2,6 +2,7 @@ import datetime
 import json
 import pyodbc
 import pandas as pd
+import requests
 
 pyodbc.pooling = False
 
