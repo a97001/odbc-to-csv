@@ -18,6 +18,10 @@ df = df.set_index('timestamp')
 # print(test.index)
 df.to_csv('data_' + str(datetime.datetime.now().timestamp()) + '.csv')
 
+data_output = df.to_csv()
+files = {'file': ('data_' + str(datetime.datetime.now().timestamp()) + '.csv', data_output)}
+requests.post('some_url', files=files)
+
 # cursor = cnxn.cursor()
 # cursor.execute("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'")
 # rows = cursor.fetchall()
